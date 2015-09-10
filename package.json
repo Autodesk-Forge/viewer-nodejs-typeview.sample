@@ -1,0 +1,44 @@
+{
+  "name": "TypeView",
+
+  "description": "Node.js Server + View & Data Client in TypeScript",
+
+  "version": "1.0.0",
+
+  "author": {
+	"name": "Philippe Leefsma",
+	"email": "philippe.leefsma@autodesk.com"
+  },
+
+  "contributors": [
+	{
+	  "name": "Jan Liska",
+	  "email": "jan.liska@autodesk.com"
+	},
+	{
+	  "name": "Philippe Leefsma",
+	  "email": "philippe.leefsma@autodesk.com"
+	}],
+
+	"dependencies": {
+		"serve-favicon": "2.3.0",
+		"express": "4.13.3",
+	  	"request": "2.61.0",
+	  	"gulp":	"*",
+	  	"del": "1.2.0",
+	  	"vinyl-paths": "1.0.0",
+	  	"gulp-bower": "0.0.10",
+	  	"gulp-sourcemaps": "1.5.2",
+	  	"gulp-typescript": "2.8.2"
+	},
+
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+
+	"license": "MIT",
+
+	"scripts": {
+		  "start": "node server.js"
+	  }
+}
