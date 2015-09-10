@@ -12,10 +12,10 @@ sudo npm install -g gulp
 
 ##Deployment
 
-In app/config/config.ts:
+In app/config/config.ts:<br/>
 replace consumerKey and consumerSecret by the keys you requested on our [API portal](https://developer.autodesk.com/api/view-and-data-api/)
 
-In app/www/scripts/app.ts:
+In app/www/scripts/app.ts:<br/>
 replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
 
 npm install
@@ -40,6 +40,6 @@ gulp
 
 ##Written by
 
-Jan Liska
-&
+Jan Liska <br/>
+& <br/>
 [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
