@@ -7,6 +7,7 @@ TypeScript Sample using Node.js and Autodesk View & Data API
 ##Dev Requirements
 
 install [Node.js](https://nodejs.org/en/download/)
+
 sudo npm install -g gulp
 
 ##Deployment
@@ -15,6 +16,7 @@ In app/config/config.ts: replace consumerKey and consumerSecret by the keys you 
 in app/www/scripts/app.ts: replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
 
 npm install
+
 gulp
 
 ##Default URL
