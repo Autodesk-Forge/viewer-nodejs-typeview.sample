@@ -17,8 +17,6 @@ install [Node.js](https://nodejs.org/en/download/)
 sudo npm install -g gulp
 
 ##Deployment
-You need to request API credentials at [Forge Platform](https://developer.autodesk.com/user/me/apps)
-
 In app/config/config.ts:<br/>
 replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)
 
@@ -39,7 +37,7 @@ http://localhost:3000/node/typeview
 
 gulp
 
-##Test the Live version
+##Live demo
 
 [TypeView](http://viewer.autodesk.io/node/typeview)
 
@@ -55,9 +53,7 @@ Click the button below to easily deploy that sample on Heroku (requires an Herok
 
 ##Written by
 
-Jan Liska <br/>
-& <br/>
-[Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
+Jan Liska & [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
 
 Autodesk Forge, 2016
 
