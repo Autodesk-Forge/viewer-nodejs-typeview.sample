@@ -8,52 +8,49 @@
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
-This sample demonstrates how to use typescript with the Forge Viewer using a Node.js server
+This sample demonstrates how to use typescript to create the basic Forge Viewer, within the sample, we will
+show the following technology:
+* Use [Node.js](https://nodejs.org) and [Express.js](http://expressjs.com) to create the web framework.
+* Use [npm](https://www.npmjs.com) to manage your javascript package.
+* Use [Gulp](https://www.npmjs.com/package/gulp) to automate tasks in your development workflow.
+* Use [gulp-typescript](https://www.npmjs.com/package/gulp-typescript) to handle compilation workflow of TypeScript.
+* Use [Forge Viewer](https://developer.autodesk.com/api/view-and-data-api/) to display the 3D Viewer in web browser.
+</br>
+If you are not familiar with any of above technology, please click the link to get more information there.
 
-##Dev Requirements
+##Live Demo
+<center>[Click me to see how it actually works](http://viewer.autodesk.io/node/typeview)</center>
+</br>
+<center>You will see the result as the following picture
+![](./screenshot.png)
+</center>
+##Setup/Usage Instructions
 
-install [Node.js](https://nodejs.org/en/download/)
-
-sudo npm install -g gulp
-
-##Deployment
-In app/config/config.ts:<br/>
+* Download and install [Node.js](https://nodejs.org/en/download/)
+* Install gulp globally. If you have previously installed a version of gulp globally, please run **"npm rm --global gulp"** to make sure your old version doesn't collide with gulp-cli. Then install it as **"npm install -g gulp"**. If you do not have 
+access to the install folder, please use **"sudo npm install -g gulp"** to gain the security priviledges of super user.
+* Please change the following place before you run or deployment:<br/>
+**In app/config/config.ts:**<br/>
 replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)
-
-In app/www/scripts/app.ts:<br/>
+**In app/www/scripts/app.ts:**<br/>
 replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
+* Install all the package by running the command **"npm install"**.
+* Run command **"gulp"** to automatically deploy your web application.  
+* Run command **"npm start"** to start the server.
 
-npm install
+Run the default URL **http://localhost:3000/node/typeview** within web browser, enjoy:)
 
-gulp
-
-npm start
-
-##Default URL
-
-http://localhost:3000/node/typeview
-
-##After any modification to a .ts file in the project
-
-gulp
-
-##Live demo
-
-[TypeView](http://viewer.autodesk.io/node/typeview)
+##Notice
+After any modification to a .ts file in the project, you need to run command **"gulp"** to generate new result.
 
 ## License
-
 That samples are licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 
 ## Deploy to Heroku
-
 Click the button below to easily deploy that sample on Heroku (requires an Heroku account)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ##Written by
 
-Jan Liska & [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
-
-Autodesk Forge, 2016
-
+Jan Liska & [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html) (**Forge Partner Development**)
