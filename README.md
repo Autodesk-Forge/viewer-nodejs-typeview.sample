@@ -29,16 +29,16 @@ If you are not familiar with any of above technology, please click the link to g
 * Download and install [Node.js](https://nodejs.org/en/download/)
 * Install gulp globally. If you have previously installed a version of gulp globally, please run **"npm rm --global gulp"** to make sure your old version doesn't collide with gulp-cli. Then install it as **"npm install -g gulp"**. If you do not have 
 access to the install folder, please use **"sudo npm install -g gulp"** to gain the security priviledges of super user.
-* Please change the following place before you run or deployment:<br/>
-**In app/config/config.ts:**<br/>
-replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)
-**In app/www/scripts/app.ts:**<br/>
+* Please change the following place before you run or deployment:</br>
+**In app/config/config.ts:**</br>
+replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)</br>
+**In app/www/scripts/app.ts:**</br>
 replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
 * Install all the package by running the command **"npm install"**.
 * Run command **"gulp"** to automatically deploy your web application.  
 * Run command **"npm start"** to start the server.
 
-Run the default URL **http://localhost:3000/node/typeview** within web browser, enjoy:)
+Run the default URL **http://localhost:3000/node/typeview** in web browser, enjoy:)
 
 ##Notice
 After any modification to a .ts file in the project, you need to run command **"gulp"** to generate new result.
