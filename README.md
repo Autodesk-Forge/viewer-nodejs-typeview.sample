@@ -8,7 +8,7 @@
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
-That sample demonstrates how to use typescript with the Forge Viewer using a Node.js server
+This sample demonstrates how to use typescript with the Forge Viewer using a Node.js server
 
 ##Dev Requirements
 
@@ -17,10 +17,10 @@ install [Node.js](https://nodejs.org/en/download/)
 sudo npm install -g gulp
 
 ##Deployment
-* You need to request API credentials at [Forge Platform](https://developer.autodesk.com/user/me/apps)
+You need to request API credentials at [Forge Platform](https://developer.autodesk.com/user/me/apps)
 
 In app/config/config.ts:<br/>
-replace consumerKey and consumerSecret by the keys you requested on our [API portal](https://developer.autodesk.com/api/view-and-data-api/)
+replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)
 
 In app/www/scripts/app.ts:<br/>
 replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
@@ -58,3 +58,6 @@ Click the button below to easily deploy that sample on Heroku (requires an Herok
 Jan Liska <br/>
 & <br/>
 [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
+
+Autodesk Forge, 2016
+
