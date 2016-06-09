@@ -19,7 +19,7 @@ show the following technology:
 If you are not familiar with any of above technology, please click the link to get more information there.
 
 ##Live Demo
-<center>[Click me to see how it actually works](http://viewer.autodesk.io/node/typeview)</center>
+<center>[Click me to see how it actually works](https://typescriptviewer.herokuapp.com/node/typeview)</center>
 </br>
 <center>You will see the result as the following picture
 ![](./screenshot.png)
@@ -54,3 +54,5 @@ Click the button below to easily deploy that sample on Heroku (requires an Herok
 ##Written by
 
 Jan Liska & [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html) (**Forge Partner Development**)
+
+https://developer.autodesk.com/api/view-and-data-api/#step1

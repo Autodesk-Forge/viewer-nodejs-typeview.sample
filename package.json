@@ -32,7 +32,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node ./app/server.js"
+    "postinstall": "npm run build-prod",
+    "start": "node ./app/server.js",
+    "build-prod": "gulp"      
   },
   "devDependencies": {}
 }
