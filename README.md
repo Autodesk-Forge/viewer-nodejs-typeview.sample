@@ -33,7 +33,7 @@ access to the install folder, please use **"sudo npm install -g gulp"** to gain 
 **In app/config/config.ts:**</br>
 replace consumerKey and consumerSecret by the keys you requested at [Forge Platform](https://developer.autodesk.com/user/me/apps)</br>
 **In app/www/scripts/app.ts:**</br>
-replace var urn = '...' by the urn of a model you previously uploaded with the [View & Data OSS REST API](https://developer.autodesk.com/api/view-and-data-api/#step1)
+replace var urn = '...' by the urn of a model you previously uploaded with the [Model Derivative API](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/)
 * Install all the package by running the command **"npm install"**.
 * Run command **"gulp"** to automatically deploy your web application.  
 * Run command **"npm start"** to start the server.
@@ -55,4 +55,4 @@ Click the button below to easily deploy that sample on Heroku (requires an Herok
 
 Jan Liska & [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html) (**Forge Partner Development**)
 
-https://developer.autodesk.com/api/view-and-data-api/#step1
+https://developer.autodesk.com/en/docs/viewer/v2/tutorials/
