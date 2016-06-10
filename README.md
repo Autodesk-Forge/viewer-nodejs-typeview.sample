@@ -4,12 +4,11 @@
 [![build status](https://api.travis-ci.org/cyrillef/extract-view.and.data.api.png)](https://travis-ci.org/cyrillef/extract-view.and.data.api)
 [![Node.js](https://img.shields.io/badge/Node.js-6.0.0-blue.svg)](https://nodejs.org/)
 [![npm](https://img.shields.io/badge/npm-3.8.6-blue.svg)](https://www.npmjs.com/)
-[![Viewer](https://img.shields.io/badge/Viewer-v2.5-green.svg)](https://developer.autodesk.com/api/view-and-data-api/)
+[![Viewer](https://img.shields.io/badge/Viewer-v2.7-green.svg)](https://developer.autodesk.com/api/view-and-data-api/)
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
-This sample demonstrates how to use typescript to create the basic Forge Viewer, within the sample, we will
-show the following technology:
+This sample demonstrates how to use typescript to create the basic Forge Viewer, to understand this sample, there are a couple of technologies as follow you need to be prepared: 
 * Use [Node.js](https://nodejs.org) and [Express.js](http://expressjs.com) to create the web framework.
 * Use [npm](https://www.npmjs.com) to manage your javascript package.
 * Use [Gulp](https://www.npmjs.com/package/gulp) to automate tasks in your development workflow.
