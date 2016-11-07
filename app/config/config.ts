@@ -1,8 +1,8 @@
 ///<reference path='../typings/node/node.d.ts' />
 var config = {
 
-    consumerKey: process.env.CONSUMERKEY || '<your consumer key>',
-    consumerSecret: process.env.CONSUMERSECRET || '<your consumer secret>'
+    consumerKey: process.env.FORGE_CLIENT_ID || '<your consumer key>',
+    consumerSecret: process.env.FORGE_CLIENT_SECRET || '<your consumer secret>'
 };
 
 export = config;
