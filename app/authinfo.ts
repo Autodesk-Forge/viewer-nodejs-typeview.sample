@@ -2,6 +2,7 @@ interface Credentials {
     client_id: string;
     client_secret: string;
     grant_type: string;
+    scope: string
 }
 
 export class AuthInfo {
@@ -27,7 +28,8 @@ export class AuthInfo {
         return {
             client_id: this._client_id,
             client_secret: this._client_secret,
-            grant_type: this._grant_type
+            grant_type: this._grant_type,
+            scope: 'data:read'
         };
     }
 }
