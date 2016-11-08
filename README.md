@@ -1,12 +1,9 @@
 # viewer-nodejs-typeview.sample
 
-[![Node.js](https://img.shields.io/badge/Node.js-4.4.3-blue.svg)](https://nodejs.org/)
-[![npm](https://img.shields.io/badge/npm-2.15.1-blue.svg)](https://www.npmjs.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-6.0.0-blue.svg)](https://nodejs.org/)
+[![npm](https://img.shields.io/badge/npm-3.8.6-blue.svg)](https://www.npmjs.com/)
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
-
-[![oAuth2](https://img.shields.io/badge/oAuth2-v1-green.svg)](http://developer.autodesk.com/)
-[![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](http://developer.autodesk.com/)
 [![Viewer](https://img.shields.io/badge/Viewer-v2.11-green.svg)](https://developer.autodesk.com/api/view-and-data-api/)
 
 # Description
@@ -83,7 +80,9 @@ All Autodesk Forge NPM packages are included by default, see complete list of wh
 After any modification to a .ts file in the project, you need to run command "gulp" to generate new result.
 
 
-## Troubleshooting
+## Questions
+
+Please post your questions to [StackOverflow using the autodesk-viewer tag](http://stackoverflow.com/questions/tagged/autodesk-viewer).
 
 After installing Github desktop for Windows, on the Git Shell, if you see a ***error setting certificate verify locations*** error, use the following:
 
