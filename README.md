@@ -76,7 +76,7 @@ Watch [this video](https://www.youtube.com/watch?v=Oqa9O20Gj0c) on how deploy th
 
 ## Packages used
 
-All Autodesk Forge NPM packages are included by default, see complete list of what's available at [NPM website](https://www.npmjs.com/browse/keyword/autodesk). Some other non-Autodesk packaged are used, including [express](https://www.npmjs.com/package/express) and its session/cookie middlewares ([express-session](https://www.npmjs.com/package/express-session) and [cookie-parser](https://www.npmjs.com/package/cookie-parser)) for user session handling. The front-end uses [bootstrap](https://www.npmjs.com/package/bootstrap) and [jquery](https://www.npmjs.com/package/jquery).
+All Autodesk Forge NPM packages are included by default, see complete list of what's available at [NPM website](https://www.npmjs.com/browse/keyword/autodesk). Some other non-Autodesk packaged are used, including [express](https://www.npmjs.com/package/express) ([express-session](https://www.npmjs.com/package/express-session)). The front-end uses [bootstrap](https://www.npmjs.com/package/bootstrap) and [jquery](https://www.npmjs.com/package/jquery).
 
 # Tips & tricks
 
@@ -96,5 +96,5 @@ Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
 
-Jan Liska & Philippe Leefsma (Forge Partner Development)<br />
-http://forge.autodesk.com<br />
+Jan Liska & Philippe Leefsma, updated by Zhong Wu (Forge Partner Development)<br />
+http://forge.autodesk.com<br/>
