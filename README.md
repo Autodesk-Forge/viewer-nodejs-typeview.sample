@@ -71,7 +71,7 @@ To deploy this application to Heroku, the **Callback URL** must use your .heroku
 Watch [this video](https://www.youtube.com/watch?v=Oqa9O20Gj0c) on how deploy this sample to Heroku.
 
 
-## Packages used
+### Packages used
 
 All Autodesk Forge NPM packages are included by default, see complete list of what's available at [NPM website](https://www.npmjs.com/browse/keyword/autodesk). Some other non-Autodesk packaged are used, including [express](https://www.npmjs.com/package/express) ([express-session](https://www.npmjs.com/package/express-session)). The front-end uses [bootstrap](https://www.npmjs.com/package/bootstrap) and [jquery](https://www.npmjs.com/package/jquery).
 
@@ -80,7 +80,7 @@ All Autodesk Forge NPM packages are included by default, see complete list of wh
 After any modification to a .ts file in the project, you need to run command "gulp" to generate new result.
 
 
-## Questions
+# Questions
 
 Please post your questions to [StackOverflow using the autodesk-viewer tag](http://stackoverflow.com/questions/tagged/autodesk-viewer).
 
@@ -95,5 +95,6 @@ Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
 
-Jan Liska & Philippe Leefsma, updated by Zhong Wu (Forge Partner Development)<br />
+Jan Liska & Philippe Leefsma<br/> 
+Last updated by Zhong Wu, November 8, 2016 (Forge Partner Development)<br />
 http://forge.autodesk.com<br/>
