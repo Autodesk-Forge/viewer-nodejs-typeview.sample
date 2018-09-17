@@ -11,7 +11,7 @@
 This sample demonstrates how to use typescript to create the basic [Autodesk Forge Viewer](https://developer.autodesk.com/en/docs/viewer/v2). The front-end will look like:
 
 ### Thumbnail
-![thumbnail](./screenshot.png)
+![thumbnail](/thumbnail.png)
 
 # Setup
 
