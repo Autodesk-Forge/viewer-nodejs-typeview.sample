@@ -4,11 +4,10 @@
 [![npm](https://img.shields.io/badge/npm-3.8.6-blue.svg)](https://www.npmjs.com/)
 ![Platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
-[![Viewer](https://img.shields.io/badge/Viewer-v2.11-green.svg)](https://developer.autodesk.com/api/view-and-data-api/)
-
+[![Viewer](https://img.shields.io/badge/Viewer-v6-green.svg)](https://forge.autodesk.com/en/docs/viewer/v6/developers_guide/overview/)
 # Description
 
-This sample demonstrates how to use typescript to create the basic [Autodesk Forge Viewer](https://developer.autodesk.com/en/docs/viewer/v2). The front-end will look like:
+This sample demonstrates how to use typescript to create the basic [Autodesk Forge Viewer](https://forge.autodesk.com/en/docs/viewer/v6/developers_guide/overview/). The front-end will look like:
 
 ### Thumbnail
 ![thumbnail](/thumbnail.png)
@@ -22,7 +21,7 @@ To understand this sample, there are a couple of technologies as follow you need
 * Use [npm](https://www.npmjs.com) to manage your javascript package.
 * Use [Gulp](https://www.npmjs.com/package/gulp) to automate tasks in your development workflow.
 * Use [gulp-typescript](https://www.npmjs.com/package/gulp-typescript) to handle compilation workflow of TypeScript.
-* Use [Forge Viewer](https://developer.autodesk.com/api/view-and-data-api/) to display the 3D Viewer in web browser.
+* Use [Forge Viewer](https://forge.autodesk.com/en/docs/viewer/v6/) to display the 3D Viewer in web browser.
 
 ### Run locally
 
@@ -35,7 +34,7 @@ Clone this project or download it. It's recommended to install [GitHub desktop](
 Install gulp globally. If you have previously installed a version of gulp globally, please run **"npm rm --global gulp"** to make sure your old version doesn't collide with gulp-cli. Then install it as **"npm install -g gulp"**. If you do not have access to the install folder, please use **"sudo npm install -g gulp"** to gain the security priviledges of super user.
 
 In app/www/scripts/app.ts:</br>
-replace var urn = '...' by the urn of a model you previously uploaded with the [Model Derivative API](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/)
+replace var urn = '...' by the urn of a model you previously uploaded with the [Model Derivative API](https://forge.autodesk.com/en/docs/model-derivative/v2/tutorials/prepare-file-for-viewer/)
 
 To run it, install the required packages, set the enviroment variables with your client ID & secret and finally start it. Via command line, navigate to the folder where this repository was cloned and use the following:
 
@@ -97,5 +96,5 @@ Please see the [LICENSE](LICENSE) file for full details.
 ## Written by
 
 Jan Liska & Philippe Leefsma<br/> 
-Last updated by Zhong Wu, November 8, 2016 (Forge Partner Development)<br />
-http://forge.autodesk.com<br/>
+Last updated by Zhong Wu, October 4, 2018 (Forge Partner Development)<br />
+[Forge Partner Development](http://forge.autodesk.com)<br/>
