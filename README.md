@@ -96,5 +96,5 @@ Please see the [LICENSE](LICENSE) file for full details.
 ## Written by
 
 Jan Liska & Philippe Leefsma<br/> 
-Last updated by Zhong Wu, October 4, 2018 (Forge Partner Development)<br />
+Last updated by Zhong Wu, October 4, 2018<br />
 [Forge Partner Development](http://forge.autodesk.com)<br/>
