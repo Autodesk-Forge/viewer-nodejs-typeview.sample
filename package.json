@@ -16,26 +16,43 @@
       "email": "philippe.leefsma@autodesk.com"
     }
   ],
-  "dependencies": {
-    "serve-favicon": "2.3.0",
-    "express": "4.13.3",
-    "request": "2.61.0",
-    "gulp": "3.9.1",
+  "devDependencies": {
+    "@types/bootstrap": "^4.2.1",
+    "@types/express": "^4.16.1",
+    "@types/forge-apis": "^0.4.0",
+    "@types/forge-viewer": "^6.3.1",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "^10.12.20",
+    "@types/three": "^0.93.19",
+    "bower": "^1.8.8",
+    "browserify": "^16.2.3",
     "del": "1.2.0",
-    "vinyl-paths": "1.0.0",
-    "gulp-bower": "0.0.10",
+    "eslint-plugin-typescript": "^0.14.0",
+    "gulp": "^4.0.0",
     "gulp-sourcemaps": "1.6.0",
-    "gulp-typescript": "2.13.6"
+    "gulp-typescript": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "serve-favicon": "^2.5.0",
+    "standard": "^12.0.1",
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^22.0.0",
+    "vinyl-paths": "1.0.0",
+    "vinyl-source-stream": "^2.0.0"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 8.0"
   },
   "license": "MIT",
   "scripts": {
+    "bower": "bower install",
     "postinstall": "npm run build-prod",
-    "start" : "NODE_ENV=production node ./app/server.js",
-    "dev": "node ./app/server.js",
-    "build-prod": "gulp"      
+    "start": "NODE_ENV=production node ./app/server/index.js",
+    "dev": "gulp server",
+    "build-prod": "npm run bower && gulp",
+    "standard": "standard 'app/**/*.ts' --parser typescript-eslint-parser --plugin typescript --fix"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^4.16.4",
+    "forge-apis": "^0.4.4"
+  }
 }

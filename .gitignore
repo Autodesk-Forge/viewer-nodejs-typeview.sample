@@ -1,3 +1,4 @@
-/node_modules
-/app/www/lib
-.idea/
+.idea
+.DS_Store
+run.sh
+node_modules
