@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+    "node_modules/@types"
+  ],
+  "types": [ "forge-viewer", "jquery", "bootstrap" ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,12 +1,6 @@
-///<reference path='../typings/node/node.d.ts' />
-var config = {
+const consumerKey = process.env.FORGE_CLIENT_ID || '<your consumer key>'
+const consumerSecret = process.env.FORGE_CLIENT_SECRET || '<your consumer secret>'
+const urn = '<your urn>'
 
-    consumerKey: process.env.FORGE_CLIENT_ID || '<your consumer key>',
-    consumerSecret: process.env.FORGE_CLIENT_SECRET || '<your consumer secret>'
-};
-
-export = config;
-
-
-
-
+export default {consumerKey, consumerSecret, urn}
+export {consumerKey, consumerSecret, urn}

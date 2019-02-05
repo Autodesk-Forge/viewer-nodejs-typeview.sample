@@ -1,61 +1,87 @@
 
 //Gulp modules
-var del = require("del");
-var gulp = require("gulp");
-var bower = require('gulp-bower');
-var vinylPaths = require('vinyl-paths');
-var sourcemaps = require('gulp-sourcemaps');
-var typescript = require('gulp-typescript');
+const del = require("del");
+const gulp = require("gulp");
+const vinylPaths = require('vinyl-paths');
+const sourcemaps = require('gulp-sourcemaps');
+const typescript = require('gulp-typescript');
+const nodemon = require("nodemon");
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
+
+///////////////////////////////////////////////////////////////////////////
+// Tasks
+//
+///////////////////////////////////////////////////////////////////////////
+gulp.task('tsBuild', gulp.series(tsBuildServer,tsBuildClient));
+
+gulp.task('server', gulp.series('tsBuild',server));
 
 ///////////////////////////////////////////////////////////////////////////
 // config
 //
 ///////////////////////////////////////////////////////////////////////////
-var config = {
-  bowerDir: './app/www/lib/'
-};
+const tsConfig={
+  noImplicitAny: true,
+  module: 'commonjs',
+  target: 'ES6'
+}
+
+///////////////////////////////////////////////////////////////////////////
+// Start dev server
+//
+///////////////////////////////////////////////////////////////////////////
+function server(){
+    nodemon({
+        script: 'app/server/index.js',
+        watch: ["app/server","app/client"],
+        ext: 'ts'
+    }).on('restart', gulp.series('tsBuild'))
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // Clean all .js and .map (ignore lib directory)
 //
 ///////////////////////////////////////////////////////////////////////////
-gulp.task('ts-clean', function () {
+function tsClean(){
 
   gulp.src(['app/**/*.js', '!app/www/lib/**/*'])
     .pipe(vinylPaths(del));
 
   gulp.src(['app/**/*.js.map', '!app/www/lib/**/*'])
     .pipe(vinylPaths(del));
-});
+}
 
 ///////////////////////////////////////////////////////////////////////////
 // Transpiles typescript files
 //
 ///////////////////////////////////////////////////////////////////////////
-gulp.task('ts-build', ['bower'], function () {
+function tsBuildServer(){
 
-  return gulp.src('app/**/*.ts', {base:'.'})
+  return gulp.src(['app/server/**/*.ts','app/config/config.ts'], {base:'.'})
   .pipe(sourcemaps.init())
-    .pipe(typescript({
-      module: 'commonjs',
-      target: 'ES5'
-      }))
+    .pipe(typescript(tsConfig))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('.'))
-});
+}
 
-///////////////////////////////////////////////////////////////////////////
-// bower task
-//
-///////////////////////////////////////////////////////////////////////////
-gulp.task('bower', function() {
+function tsBuildClient(){
 
-  return bower({directory: config.bowerDir}).pipe(
-    gulp.dest(config.bowerDir));
-});
+   gulp.src('app/client/**/*.ts', {base:'.'})
+  .pipe(sourcemaps.init())
+    .pipe(typescript(tsConfig))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('.'));
+
+  return browserify({entries: ['app/client/app.js','app/config/config.js'],debug:false})
+       .bundle()
+       .pipe(source('app.js'))
+       .pipe(gulp.dest('./app/www/scripts/'))
+}
+
 
 ///////////////////////////////////////////////////////////////////////////
 // Default task
 //
 ///////////////////////////////////////////////////////////////////////////
-gulp.task('default', ['ts-build']);
+gulp.task('default', gulp.series('tsBuild'));
