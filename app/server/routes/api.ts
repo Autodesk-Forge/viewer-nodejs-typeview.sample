@@ -13,7 +13,7 @@ router.get('/token', (req:express.Request, res:express.Response) => {
   const clientId = authInfo.client_id
   		const clientSecret = authInfo.client_secret
 
-  		const apiInstance = new AuthClientTwoLegged(clientId, clientSecret, authInfo.scope)
+  		const apiInstance = new AuthClientTwoLegged(clientId, clientSecret, authInfo.scope, true)
   		apiInstance.authenticate().then((data:any) => res.send(data))
 })
 

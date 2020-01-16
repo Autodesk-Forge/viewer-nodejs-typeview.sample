@@ -27,7 +27,7 @@
     "bower": "^1.8.8",
     "browserify": "^16.2.3",
     "del": "1.2.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-sourcemaps": "1.6.0",
     "gulp-typescript": "^5.0.0",
     "nodemon": "^1.18.9",
@@ -42,13 +42,14 @@
   "license": "MIT",
   "scripts": {
     "bower": "bower install",
-    "postinstall": "npm run build-prod",
+    "postinstall": "yarn run build-prod",
     "start": "NODE_ENV=production node ./app/server/index.js",
     "dev": "gulp server",
-    "build-prod": "npm run bower && gulp"
+    "build-prod": "yarn run bower && gulp"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "forge-apis": "^0.4.4"
+    "forge-apis": "^0.4.4",
+    "global": "^4.4.0"
   }
 }
