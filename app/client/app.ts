@@ -45,7 +45,9 @@ $(document).ready(() => {
         // Load the chosen geometry
         const svfUrl = doc.getViewablePath(initGeom)
         const modelOptions = {
-          sharedPropertyDbPath: doc.getPropertyDbPath()
+          sharedPropertyDbPath: doc.getFullPath(
+              doc.getRoot().findPropertyDbPath()
+          )
         }
         viewer.start(svfUrl, modelOptions)
       }, (viewerErrorCode:number) => messageModalBox.modal('show').find('.modal-body').text('onDocumentLoadFailure() - errorCode:' + viewerErrorCode), null)
